@@ -87,6 +87,11 @@ const BloomingPage: FunctionComponent = () => {
           ))}
         </div>
       </section>
+      <div className="right-aligned mt-20">
+        <Link href={'/'}>
+          <button className="back-button">Volver</button>
+        </Link>
+      </div>
     </div>
   );
 };

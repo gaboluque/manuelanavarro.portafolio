@@ -15,5 +15,9 @@
     text-align: left;
     color: #707070;
     text-transform: uppercase;
+
+    &:hover {
+      color: $orange;
+    }
   }
 }

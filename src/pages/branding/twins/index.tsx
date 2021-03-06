@@ -21,7 +21,11 @@ const TwinsPage: FunctionComponent = () => {
             personas. Este negocio busca concientizar a las personas sobre el consumo de azúcar sin
             privarlos de postres ni antojos.
           </p>
-          <a href="https://www.instagram.com/twinstortasycupcakes/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/twinstortasycupcakes/"
+          >
             instagram.com/twinstortasycupcakes
           </a>
           <div className="info">
@@ -96,6 +100,11 @@ const TwinsPage: FunctionComponent = () => {
         <h4 className="title">PATRÓN</h4>
         <img src={`/static/images/twins/pattern.png`} alt={`pattern`} />
       </section>
+      <div className="right-aligned mt-20">
+        <Link href={'/'}>
+          <button className="back-button">Volver</button>
+        </Link>
+      </div>
     </div>
   );
 };

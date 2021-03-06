@@ -67,6 +67,11 @@ const RemPage: FunctionComponent = () => {
           <img src="/static/images/rem/rem2.png" alt="rem2" />
         </div>
       </div>
+      <div className="right-aligned mt-20">
+        <Link href={'/'}>
+          <button className="back-button">Volver</button>
+        </Link>
+      </div>
     </div>
   );
 };

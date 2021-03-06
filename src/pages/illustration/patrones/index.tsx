@@ -26,13 +26,15 @@ const PatronesPage: FunctionComponent = () => {
         </div>
         <div className="description">
           <p>
-            Estos son diseños de patrones infantiles para cualquier superficie Son mundos ilustrados
-            para fomentar la imaginación y la diversión. Estos patrones fueron hechos tanto análoga
-            como digitalmente como un ejercicio de creatividad, como hobby y como forma de
-            meditación para organizar la cabeza y transformar las ideas.
+            Estos son diseños de patrones infantiles para cualquier superficie. Son mundos
+            ilustrados para fomentar la imaginación y la diversión. Estos patrones fueron hechos
+            tanto análoga como digitalmente como un ejercicio de creatividad, como hobby y como
+            forma de meditación para organizar la cabeza y transformar las ideas.
           </p>
 
-          <a href="https://www.instagram.com/manunavarroilust/">instagram.com/manunavarroilust</a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/manunavarroilust/">
+            instagram.com/manunavarroilust
+          </a>
         </div>
       </section>
       <section className="patrones-images">

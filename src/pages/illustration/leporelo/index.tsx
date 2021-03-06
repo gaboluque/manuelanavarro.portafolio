@@ -33,7 +33,7 @@ const LeporeloPage: FunctionComponent = () => {
             surreales y llenos de magia.
           </p>
 
-          <a href="https://www.behance.net/manuelanavarro1">
+          <a target="_blank" rel="noreferrer" href="https://www.behance.net/manuelanavarro1">
             behance.net/manuelanavarro<span className="number">1</span>
           </a>
         </div>

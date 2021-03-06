@@ -1,0 +1,78 @@
+@import "../../../styles/helpers";
+
+.trackway-page {
+
+  .process {
+    .process-item {
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: -8px;
+        left: 0;
+        border-radius: 50%;
+        background-color: $green;
+      }
+    }
+  }
+
+  .project-description {
+    .moodboard {
+
+      @include mobile {
+        display: none;
+      }
+
+      img {
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .web-platform-container {
+    .web-platform {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+
+
+        img {
+         margin-bottom: 10px;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .mobile-platform-container {
+    .mobile-platform {
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+        display: block;
+      }
+
+      img {
+        width: 100px;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+}
