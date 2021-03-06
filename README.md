@@ -1,2 +1,2 @@
-# portfolio
-My awesome portfolio made with love
+# Portfolio
+Awesome portfolio for Manuela Navarro
