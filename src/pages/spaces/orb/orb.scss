@@ -1,0 +1,25 @@
+@import "../../../styles/helpers";
+
+.orb-page {
+
+  .description {
+    img {
+      position: absolute;
+      top: -160px;
+      right: -180px;
+      width: 715px;
+    }
+  }
+
+  .branding {
+    img {
+      width: 100%;
+    }
+  }
+
+  .photos {
+    img {
+      width: 100%;
+    }
+  }
+}
