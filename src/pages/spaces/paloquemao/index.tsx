@@ -1,16 +1,19 @@
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
 import './paloquemao.scss';
+import Process from '../../../components/Process';
+import { paloquemaoProcessSteps } from './data';
 
 const PaloquemaoPage: FunctionComponent = () => {
+  const fanzineArr = [1, 2, 3, 4, 5, 6];
   return (
-    <div className="page trackway-page">
+    <div className="page paloquemao-page">
       <Link href={'/'}>
         <button className="back-button">Volver</button>
       </Link>
       <section className="row project-description">
-        <div className="project-info">
-          <h3 className="title">PALOQUEMAO</h3>
+        <div className="project-info col-xs-24 col-md-14">
+          <h3 className="title">A LA ORDEN</h3>
           <p>
             A la orden, qué se le ofrece... es un proyecto hecho para poner en el mapa a quienes en
             Colombia hacen una labor increíble vendiendo y cultivando diferentes productos para
@@ -36,8 +39,43 @@ const PaloquemaoPage: FunctionComponent = () => {
             </p>
           </div>
         </div>
-        <div className="description"></div>
+        <div className="description">
+          <img src="/static/images/paloquemao/moodboard.png" alt="moodboard" />
+        </div>
       </section>
+      <section className="process-container mt-50">
+        <h4 className="title">Proceso</h4>
+        <Process steps={paloquemaoProcessSteps} />
+      </section>
+      <section className="fanzines-container">
+        <h4 className="title">Ilustraciones del fanzine</h4>
+        <div className="images">
+          {fanzineArr.map((fanzineIndex) => (
+            <img
+              key={fanzineIndex}
+              src={`/static/images/paloquemao/fanzine${fanzineIndex}.png`}
+              alt={`fanzine${fanzineIndex}`}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="performance-container">
+        <h4 className="title">Ilustraciones del fanzine</h4>
+        <div className="images">
+          {fanzineArr.map((fanzineIndex) => (
+            <img
+              key={fanzineIndex}
+              src={`/static/images/paloquemao/performance${fanzineIndex}.png`}
+              alt={`fanzine${fanzineIndex}`}
+            />
+          ))}
+        </div>
+      </section>
+      <div className="right-aligned mt-20">
+        <Link href={'/'}>
+          <button className="back-button">Volver</button>
+        </Link>
+      </div>
     </div>
   );
 };
