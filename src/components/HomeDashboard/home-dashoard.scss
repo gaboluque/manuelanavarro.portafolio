@@ -107,6 +107,11 @@
     padding: 35px;
     overflow-y: hidden;
 
+    &.first {
+      animation: blowUp linear 0.3s;
+      animation-iteration-count: 1;
+    }
+
     @include mobile {
       padding: 20px;
     }
@@ -215,5 +220,27 @@
       color: #FFF;
       font-size: 30px;
     }
+  }
+}
+
+
+
+@keyframes blowUp{
+  0% {
+    transform:  scaleX(0.1) scaleY(0.1) ;
+    border-radius: 50%;
+  }
+  25% {
+    transform:  scaleX(0.25) scaleY(0.25) ;
+    border-radius: 50%;
+  }
+  50% {
+    transform: scaleX(0.5) scaleY(0.5) ;
+  }
+  75% {
+    transform: scaleX(0.75) scaleY(0.75) ;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1) ;
   }
 }

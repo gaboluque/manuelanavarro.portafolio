@@ -6,9 +6,10 @@ import Link from 'next/link';
 interface ProjectModalProps {
   modal: ProjectCollectionItem;
   close: () => void;
+  first: boolean;
 }
 
-const ProjectModal: React.FunctionComponent<ProjectModalProps> = ({ modal, close }) => {
+const ProjectModal: React.FunctionComponent<ProjectModalProps> = ({ modal, close, first }) => {
   return (
     <ReactModal
       parentSelector={(): HTMLElement =>
@@ -16,7 +17,7 @@ const ProjectModal: React.FunctionComponent<ProjectModalProps> = ({ modal, close
       }
       appElement={document.getElementById('__next') as HTMLElement}
       isOpen={!!modal}
-      className={`modal-container bg-${modal.color}`}
+      className={`modal-container bg-${modal.color} ${first ? 'first' : ''}`}
     >
       <button className="close-button" onClick={close}>
         X

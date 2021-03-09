@@ -15,12 +15,12 @@ const HomeDashboard: React.FunctionComponent = () => {
     }
   }, [query]);
 
-  const openModal = (modalItem: ProjectCollectionItem) => {
+  const openModal = (modalItem: ProjectCollectionItem): void => {
     setModal(modalItem);
     window.history.replaceState(null, '', `/?menu-item=${modalItem.path}`);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal = (): void => {
     setModal(undefined);
     window.history.replaceState(null, '', '/');
   };
@@ -39,7 +39,9 @@ const HomeDashboard: React.FunctionComponent = () => {
           </button>
         ))}
       </div>
-      {!!modal && <ProjectModal close={handleCloseModal} modal={modal} />}
+      {!!modal && (
+        <ProjectModal first={query.open !== '1'} close={handleCloseModal} modal={modal} />
+      )}
     </section>
   );
 };

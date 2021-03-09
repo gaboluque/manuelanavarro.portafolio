@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const BackButton: FunctionComponent<{ menuItem: string }> = ({ menuItem }) => {
   return (
-    <Link href={'/?menu-item=' + menuItem}>
+    <Link href={'/?open=1&menu-item=' + menuItem}>
       <button className="back-button">Volver</button>
     </Link>
   );
