@@ -12261,8 +12261,76 @@ button {
       justify-content: center;
       align-items: center; }
       .projects-dashboard .categories-container .category {
-        width: 200px;
-        height: 200px; } }
+        width: 300px;
+        height: 300px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent; }
+        .projects-dashboard .categories-container .category span {
+          z-index: 100;
+          font-size: 20px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: 10px;
+          color: #ffffff; }
+        .projects-dashboard .categories-container .category.green:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaVerde.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(0deg); }
+        .projects-dashboard .categories-container .category.yellow:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaAmarilla.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(186deg);
+          top: -6%; }
+        .projects-dashboard .categories-container .category.orange:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaNaranja.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(334deg); }
+        .projects-dashboard .categories-container .category.blue:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaAzul.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(17deg); }
+      .projects-dashboard .categories-container .category {
+        width: 250px;
+        height: 250px; }
+        .projects-dashboard .categories-container .category span {
+          font-size: 14px; } }
   @media (min-width: 769px) {
     .projects-dashboard .categories-container {
       padding: 0 300px;
@@ -12278,14 +12346,68 @@ button {
         width: 300px;
         height: 300px;
         border: none;
-        cursor: pointer; } }
-  .projects-dashboard .categories-container .category {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    border-radius: 50%; }
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent; }
+        .projects-dashboard .categories-container .category span {
+          z-index: 100;
+          font-size: 20px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: 10px;
+          color: #ffffff; }
+        .projects-dashboard .categories-container .category.green:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaVerde.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(0deg); }
+        .projects-dashboard .categories-container .category.yellow:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaAmarilla.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(186deg);
+          top: -6%; }
+        .projects-dashboard .categories-container .category.orange:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaNaranja.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(334deg); }
+        .projects-dashboard .categories-container .category.blue:before {
+          content: "";
+          position: absolute;
+          width: 94%;
+          height: 94%;
+          top: 5%;
+          left: 10px;
+          background-image: url("/static/images/manchaAzul.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: -1;
+          transform: rotate(17deg); } }
   .projects-dashboard .modal-container {
     width: 100vw;
     height: 100vh;
