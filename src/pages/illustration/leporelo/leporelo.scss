@@ -1,6 +1,14 @@
 @import "../../../styles/helpers";
 
 .leporelo-page {
+
+  .back-button {
+    &:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
   .leporelo-images {
 
     img {

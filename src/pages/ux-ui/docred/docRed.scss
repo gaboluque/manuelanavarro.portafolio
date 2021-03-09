@@ -2,6 +2,13 @@
 
 .docRed-page {
 
+  .back-button {
+    &:hover {
+      color: $green;
+      border-color: $green;
+    }
+  }
+
   .process {
     .process-item {
       &:before {

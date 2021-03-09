@@ -82,6 +82,11 @@ button {
     border: solid 1px #707070;
     background-color: transparent;
 
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+    }
+
     @include mobile {
       width: auto;
       height: auto;

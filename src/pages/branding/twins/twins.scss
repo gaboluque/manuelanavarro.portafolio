@@ -2,6 +2,13 @@
 
 .twins-page {
 
+  .back-button {
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+    }
+  }
+
   .project-description {
     .moodboard {
 

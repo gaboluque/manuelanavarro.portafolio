@@ -2,6 +2,14 @@
 
 .orb-page {
 
+
+  .back-button {
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+
   .description {
     img {
       position: absolute;

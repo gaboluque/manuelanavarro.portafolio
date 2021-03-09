@@ -2,6 +2,13 @@
 
 .davivienda-page {
 
+  .back-button {
+    &:hover {
+      color: $green;
+      border-color: $green;
+    }
+  }
+
   .project-description {
     .moodboard {
       @include mobile {

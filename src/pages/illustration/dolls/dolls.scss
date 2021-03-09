@@ -1,6 +1,13 @@
 @import "../../../styles/helpers";
 
 .dolls-page {
+  .back-button {
+    &:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
   .dolls-images {
     margin-top: 20px;
     display: grid;

@@ -2,6 +2,14 @@
 
 .paloquemao-page {
 
+
+  .back-button {
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+
   .fanzines-container, .performance-container {
 
     .images {

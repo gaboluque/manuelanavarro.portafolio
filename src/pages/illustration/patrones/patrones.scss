@@ -1,6 +1,14 @@
 @import "../../../styles/helpers";
 
 .patrones-page {
+
+  .back-button {
+    &:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
   .patrones-images {
     margin-top: 50px;
 
