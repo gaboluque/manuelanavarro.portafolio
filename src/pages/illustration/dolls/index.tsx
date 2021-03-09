@@ -1,15 +1,14 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './dolls.scss';
+import BackButton from '../../../components/BackButton';
 
 const DollsPage: FunctionComponent = () => {
   const dollsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
     <div className="page dolls-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="dolls" />
+
       <section className="project-description">
         <div className="project-info">
           <h3 className="title">MUÑECAS</h3>
@@ -49,9 +48,7 @@ const DollsPage: FunctionComponent = () => {
       </section>
 
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="dolls" />
       </div>
     </div>
   );

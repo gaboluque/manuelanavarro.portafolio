@@ -1,14 +1,13 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './patrones.scss';
+import BackButton from '../../../components/BackButton';
 
 const PatronesPage: FunctionComponent = () => {
   const patronesArr = [1, 2, 3, 4];
   return (
     <div className="page patrones-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="dolls" />
+
       <section className="project-description">
         <div className="project-info">
           <h3 className="title">PATRONES</h3>
@@ -48,9 +47,7 @@ const PatronesPage: FunctionComponent = () => {
       </section>
 
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="dolls" />
       </div>
     </div>
   );

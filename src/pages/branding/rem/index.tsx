@@ -1,18 +1,16 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './rem.scss';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { remProcessSteps } from './data';
 import Process from '../../../components/Process';
+import BackButton from '../../../components/BackButton';
 
 const RemPage: FunctionComponent = () => {
   const servicesArr = [1, 2, 3];
   return (
     <div className="page rem-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="branding" />
       <section className="row project-description mb-50">
         <div className="project-info col-xs-24 col-md-10">
           <h3 className="title">REM</h3>
@@ -68,9 +66,7 @@ const RemPage: FunctionComponent = () => {
         </div>
       </div>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="branding" />
       </div>
     </div>
   );

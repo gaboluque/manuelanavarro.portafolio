@@ -1,16 +1,14 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './orb.scss';
 import Process from '../../../components/Process';
 import { orbProcessSteps } from './data';
+import BackButton from '../../../components/BackButton';
 
 const OrbPage: FunctionComponent = () => {
-  const fanzineArr = [1, 2, 3, 4, 5, 6];
   return (
     <div className="page orb-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="spaces" />
+
       <section className="row project-description">
         <div className="project-info col-xs-24 col-md-14">
           <h3 className="title">Circo Orb</h3>
@@ -75,9 +73,7 @@ const OrbPage: FunctionComponent = () => {
         </div>
       </section>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="spaces" />
       </div>
     </div>
   );

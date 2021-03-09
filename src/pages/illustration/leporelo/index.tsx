@@ -1,15 +1,14 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './leporelo.scss';
+import BackButton from '../../../components/BackButton';
 
 const LeporeloPage: FunctionComponent = () => {
   const leporeloArr = [1, 2, 3, 4, 5, 6];
 
   return (
     <div className="page leporelo-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="dolls" />
+
       <section className="project-description">
         <div className="project-info">
           <h3 className="title">LEPORELO</h3>
@@ -59,9 +58,7 @@ const LeporeloPage: FunctionComponent = () => {
         </div>
       </section>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="dolls" />
       </div>
     </div>
   );

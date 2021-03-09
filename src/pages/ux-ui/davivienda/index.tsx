@@ -1,13 +1,12 @@
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
 import './davivienda.scss';
+import BackButton from '../../../components/BackButton';
 
 const DaviviendaPage: FunctionComponent = () => {
   return (
     <div className="page davivienda-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="ux-ui" />
       <section className="row project-description mb-50">
         <div className="project-info col-xs-24 col-md-10">
           <h3 className="title">Davivienda</h3>
@@ -212,9 +211,7 @@ const DaviviendaPage: FunctionComponent = () => {
         </div>
       </section>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="ux-ui" />
       </div>
     </div>
   );

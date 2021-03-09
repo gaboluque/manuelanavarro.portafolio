@@ -1,18 +1,17 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './twins.scss';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { twinsProcessSteps } from './data.tsx';
 import Process from '../../../components/Process';
+import BackButton from '../../../components/BackButton';
 
 const TwinsPage: FunctionComponent = () => {
   const graphicsArr = [1, 2, 3, 4, 5, 6, 7];
   return (
     <div className="page twins-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="branding" />
+
       <section className="row project-description mb-50">
         <div className="project-info col-xs-24 col-md-10">
           <h3 className="title">TWINS</h3>
@@ -101,9 +100,7 @@ const TwinsPage: FunctionComponent = () => {
         <img src={`/static/images/twins/pattern.png`} alt={`pattern`} />
       </section>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="branding" />
       </div>
     </div>
   );

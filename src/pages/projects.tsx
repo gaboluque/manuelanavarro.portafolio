@@ -9,6 +9,7 @@ interface ProjectItem {
 export interface ProjectCollectionItem {
   title: string;
   color: string;
+  path: string;
   items: ProjectItem[];
 }
 
@@ -16,6 +17,7 @@ export const projectsCollection: ProjectCollectionItem[] = [
   {
     title: 'UX/UI',
     color: 'green',
+    path: 'ux-ui',
     items: [
       {
         route: '/ux-ui/trackway',
@@ -37,6 +39,7 @@ export const projectsCollection: ProjectCollectionItem[] = [
   {
     title: 'BRANDING',
     color: 'orange',
+    path: 'branding',
     items: [
       {
         route: '/branding/twins',
@@ -58,6 +61,7 @@ export const projectsCollection: ProjectCollectionItem[] = [
   {
     title: 'ILUSTRACIÓN',
     color: 'yellow',
+    path: 'illustration',
     items: [
       {
         route: '/illustration/dolls',
@@ -79,6 +83,7 @@ export const projectsCollection: ProjectCollectionItem[] = [
   {
     title: 'ESPACIOS',
     color: 'blue',
+    path: 'spaces',
     items: [
       {
         route: '/spaces/paloquemao',
@@ -93,6 +98,8 @@ export const projectsCollection: ProjectCollectionItem[] = [
     ],
   },
 ];
+
+export const collectionPaths = projectsCollection.map(({ path }) => path);
 
 const defaultComponent: FunctionComponent = () => <></>;
 export default defaultComponent;

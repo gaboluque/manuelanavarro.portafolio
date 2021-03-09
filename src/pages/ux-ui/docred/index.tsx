@@ -1,17 +1,15 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './docRed.scss';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { docRedProcessSteps } from './data';
 import Process from '../../../components/Process';
+import BackButton from '../../../components/BackButton';
 
 const DocRedPage: FunctionComponent = () => {
   return (
     <div className="page docRed-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="ux-ui" />
       <section className="row project-description mb-50">
         <div className="project-info col-xs-24 col-md-10">
           <h3 className="title">DocRed</h3>
@@ -55,9 +53,7 @@ const DocRedPage: FunctionComponent = () => {
         <img src="/static/images/docRed/feedProposal.png" alt="feedProposal" />
 
         <div className="right-aligned mt-20">
-          <Link href={'/'}>
-            <button className="back-button">Volver</button>
-          </Link>
+          <BackButton menuItem="ux-ui" />
         </div>
       </section>
     </div>

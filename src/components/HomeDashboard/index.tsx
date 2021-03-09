@@ -1,10 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectModal from './ProjectModal';
 import './home-dashoard.scss';
-import { ProjectCollectionItem, projectsCollection } from '../../pages/projects';
+import { collectionPaths, ProjectCollectionItem, projectsCollection } from '../../pages/projects';
+import { useRouter } from 'next/router';
 
 const HomeDashboard: React.FunctionComponent = () => {
-  const [modal, setModal] = useState<ProjectCollectionItem | null>(null);
+  const [modal, setModal] = useState<ProjectCollectionItem | undefined>(undefined);
+  const { query } = useRouter();
+
+  useEffect(() => {
+    const path = (query ? query['menu-item'] : null) as string;
+    if (query && collectionPaths.includes(path)) {
+      setModal(projectsCollection.find(({ path: projPath }) => projPath === path));
+    }
+  }, [query]);
+
+  const openModal = (modalItem: ProjectCollectionItem) => {
+    setModal(modalItem);
+    window.history.replaceState(null, '', `/?menu-item=${modalItem.path}`);
+  };
+
+  const handleCloseModal = () => {
+    setModal(undefined);
+    window.history.replaceState(null, '', '/');
+  };
 
   return (
     <section id="projects" className="projects-dashboard">
@@ -13,14 +32,14 @@ const HomeDashboard: React.FunctionComponent = () => {
         {projectsCollection.map((modalItem) => (
           <button
             key={modalItem.title}
-            onClick={() => setModal(modalItem)}
+            onClick={() => openModal(modalItem)}
             className={`category ${modalItem.color}`}
           >
             <span>{modalItem.title}</span>
           </button>
         ))}
       </div>
-      {!!modal && <ProjectModal close={() => setModal(null)} modal={modal} />}
+      {!!modal && <ProjectModal close={handleCloseModal} modal={modal} />}
     </section>
   );
 };

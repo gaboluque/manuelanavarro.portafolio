@@ -1,16 +1,15 @@
 import { FunctionComponent } from 'react';
-import Link from 'next/link';
 import './paloquemao.scss';
 import Process from '../../../components/Process';
 import { paloquemaoProcessSteps } from './data';
+import BackButton from '../../../components/BackButton';
 
 const PaloquemaoPage: FunctionComponent = () => {
   const fanzineArr = [1, 2, 3, 4, 5, 6];
   return (
     <div className="page paloquemao-page">
-      <Link href={'/'}>
-        <button className="back-button">Volver</button>
-      </Link>
+      <BackButton menuItem="spaces" />
+
       <section className="row project-description">
         <div className="project-info col-xs-24 col-md-14">
           <h3 className="title">A LA ORDEN</h3>
@@ -72,9 +71,7 @@ const PaloquemaoPage: FunctionComponent = () => {
         </div>
       </section>
       <div className="right-aligned mt-20">
-        <Link href={'/'}>
-          <button className="back-button">Volver</button>
-        </Link>
+        <BackButton menuItem="spaces" />
       </div>
     </div>
   );
