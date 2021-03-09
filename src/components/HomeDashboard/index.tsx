@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import ProjectModal from './ProjectModal'
-import './home-dashoard.scss'
-import { ProjectCollectionItem, projectsCollection } from '../../pages/projects'
+import React, { useState } from 'react';
+import ProjectModal from './ProjectModal';
+import './home-dashoard.scss';
+import { ProjectCollectionItem, projectsCollection } from '../../pages/projects';
 
 const HomeDashboard: React.FunctionComponent = () => {
-  const [modal, setModal] = useState<ProjectCollectionItem | null>(null)
+  const [modal, setModal] = useState<ProjectCollectionItem | null>(null);
 
   return (
     <section id="projects" className="projects-dashboard">
@@ -14,15 +14,15 @@ const HomeDashboard: React.FunctionComponent = () => {
           <button
             key={modalItem.title}
             onClick={() => setModal(modalItem)}
-            className={`category bg-${modalItem.color}`}
+            className={`category ${modalItem.color}`}
           >
-            {modalItem.title}
+            <span>{modalItem.title}</span>
           </button>
         ))}
       </div>
       {!!modal && <ProjectModal close={() => setModal(null)} modal={modal} />}
     </section>
-  )
-}
+  );
+};
 
-export default HomeDashboard
+export default HomeDashboard;
