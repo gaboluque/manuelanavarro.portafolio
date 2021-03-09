@@ -1583,6 +1583,9 @@ button {
     padding: 21px 41px;
     border: solid 1px #707070;
     background-color: transparent; }
+    .page .back-button:hover {
+      color: #f16f26;
+      border-color: #f16f26; }
     @media (max-width: 768px) {
       .page .back-button {
         width: auto;
@@ -2473,6 +2476,10 @@ button {
 .w-100 {
   width: "100%" !important; }
 
+.blooming-page .back-button:hover {
+  color: #f16f26;
+  border-color: #f16f26; }
+
 @media (max-width: 768px) {
   .blooming-page .project-description .moodboard {
     display: none; } }
@@ -3353,6 +3360,10 @@ button {
 .w-100 {
   width: "100%" !important; }
 
+.rem-page .back-button:hover {
+  color: #f16f26;
+  border-color: #f16f26; }
+
 @media (max-width: 768px) {
   .rem-page .project-description .moodboard {
     display: none; } }
@@ -4199,6 +4210,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.twins-page .back-button:hover {
+  color: #f16f26;
+  border-color: #f16f26; }
 
 @media (max-width: 768px) {
   .twins-page .project-description .moodboard {
@@ -5084,6 +5099,10 @@ button {
 .w-100 {
   width: "100%" !important; }
 
+.orb-page .back-button:hover {
+  color: #c0d5d2;
+  border-color: #c0d5d2; }
+
 .orb-page .description img {
   position: absolute;
   top: -160px;
@@ -5918,6 +5937,10 @@ button {
 .w-100 {
   width: "100%" !important; }
 
+.paloquemao-page .back-button:hover {
+  color: #c0d5d2;
+  border-color: #c0d5d2; }
+
 .paloquemao-page .fanzines-container .images, .paloquemao-page .performance-container .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6750,6 +6773,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.docRed-page .back-button:hover {
+  color: #656d26;
+  border-color: #656d26; }
 
 .docRed-page .process .process-item:before {
   content: "";
@@ -7620,6 +7647,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.trackway-page .back-button:hover {
+  color: #656d26;
+  border-color: #656d26; }
 
 .trackway-page .process .process-item:before {
   content: "";
@@ -9337,6 +9368,10 @@ button {
 .w-100 {
   width: "100%" !important; }
 
+.dolls-page .back-button:hover {
+  color: #ed9640;
+  border-color: #ed9640; }
+
 .dolls-page .dolls-images {
   margin-top: 20px;
   display: grid;
@@ -10169,6 +10204,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.leporelo-page .back-button:hover {
+  color: #ed9640;
+  border-color: #ed9640; }
 
 .leporelo-page .leporelo-images img {
   width: 100%; }
@@ -11010,6 +11049,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.patrones-page .back-button:hover {
+  color: #ed9640;
+  border-color: #ed9640; }
 
 .patrones-page .patrones-images {
   margin-top: 50px; }
@@ -14699,6 +14742,10 @@ button {
 
 .w-100 {
   width: "100%" !important; }
+
+.davivienda-page .back-button:hover {
+  color: #656d26;
+  border-color: #656d26; }
 
 @media (max-width: 768px) {
   .davivienda-page .project-description .moodboard {
