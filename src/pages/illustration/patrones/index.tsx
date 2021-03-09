@@ -6,7 +6,7 @@ const PatronesPage: FunctionComponent = () => {
   const patronesArr = [1, 2, 3, 4];
   return (
     <div className="page patrones-page">
-      <BackButton menuItem="dolls" />
+      <BackButton menuItem="illustration" />
 
       <section className="project-description">
         <div className="project-info">
@@ -47,7 +47,7 @@ const PatronesPage: FunctionComponent = () => {
       </section>
 
       <div className="right-aligned mt-20">
-        <BackButton menuItem="dolls" />
+        <BackButton menuItem="illustration" />
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const PaloquemaoPage: FunctionComponent = () => {
             </p>
           </div>
         </div>
-        <div className="description">
+        <div className="description ml-50">
           <img src="/static/images/paloquemao/moodboard.png" alt="moodboard" />
         </div>
       </section>

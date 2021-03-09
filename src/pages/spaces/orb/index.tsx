@@ -17,7 +17,7 @@ const OrbPage: FunctionComponent = () => {
             original que nos lleva por el mundo de la muerte y el duelo sanado dolores y
             enseñándonos a despedirnos de nuestros seres queridos. En este proyecto participé
             creando e branding, aterrizando el modelo de negocio, haciendo los maquillajes y la
-            dirección de arte del proyecto. https://www.instagram.com/circoorb/?hl=es-la
+            dirección de arte del proyecto.
           </p>
           <a href="https://www.instagram.com/circoorb/" target="_blank" rel="noreferrer">
             instagram.com/circoorb

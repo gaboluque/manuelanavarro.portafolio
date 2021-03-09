@@ -7,7 +7,7 @@ const LeporeloPage: FunctionComponent = () => {
 
   return (
     <div className="page leporelo-page">
-      <BackButton menuItem="dolls" />
+      <BackButton menuItem="illustration" />
 
       <section className="project-description">
         <div className="project-info">
@@ -58,7 +58,7 @@ const LeporeloPage: FunctionComponent = () => {
         </div>
       </section>
       <div className="right-aligned mt-20">
-        <BackButton menuItem="dolls" />
+        <BackButton menuItem="illustration" />
       </div>
     </div>
   );

@@ -151,16 +151,16 @@ const DaviviendaPage: FunctionComponent = () => {
       </section>
       <section className="phase phase3">
         <h3>FASE TRES: De documentado de información a generadores de contenido</h3>
-        <div className="row session justify-space-between">
+        <div className="row session justify-space-between mb-30">
           <div className="col-xs-24 col-md-9 description">
             <h3>PRIMERA SESIÓN: TÉRMINOS</h3>
             <div className="description-item">
-              <h3>Objetivo:</h3>
+              <h4>Objetivo:</h4>
               Identificar los términos usados en cada documento y transformar el lenguaje para que
               fuera más empático Con el usuario.
             </div>
             <div className="description-item">
-              <h3>Aporte:</h3>
+              <h4>Aporte:</h4>
               Transformamos una información pesada y poco amigable en un contenido sencillo, fácil
               de entender y de rápida lectura.
             </div>
@@ -168,12 +168,12 @@ const DaviviendaPage: FunctionComponent = () => {
           <div className="col-xs-24 col-md-9 description">
             <h3>SEGUNDA SESIÓN: IDEACIÓN</h3>
             <div className="description-item">
-              <h3>Objetivo:</h3>
+              <h4>Objetivo:</h4>
               Generar un contenido digerible y de fácil acceso cambiando el lenguaje y la forma de
               presentar los documentos del banco.
             </div>
             <div className="description-item">
-              <h3>Aporte:</h3>
+              <h4>Aporte:</h4>
               Logramos crear todo un proceso de transformación de los documento pasando de pdf a
               infografías interactivas, gamification y video entre otros.
             </div>

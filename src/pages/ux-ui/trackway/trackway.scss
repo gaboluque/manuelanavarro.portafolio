@@ -38,7 +38,7 @@
     .web-platform {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 10px;
+      column-gap: 20px;
 
       @include mobile {
         grid-template-columns: 1fr;
