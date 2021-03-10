@@ -19,9 +19,11 @@ const ProjectModal: React.FunctionComponent<ProjectModalProps> = ({ modal, close
       isOpen={!!modal}
       className={`modal-container bg-${modal.color} ${first ? 'first' : ''}`}
     >
-      <button className="close-button" onClick={close}>
-        X
-      </button>
+      <Link href={'/?open=0'}>
+        <button className="close-button" onClick={close}>
+          X
+        </button>
+      </Link>
       <div className="modal-body">
         <div>
           <h3>{modal.title}</h3>
